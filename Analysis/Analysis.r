@@ -451,7 +451,7 @@ subMod_gauss_objOnly_viv <- lmer(
     rename(value = ObjViv)
   ) 
 
-# Diagnostic plots to assess suitability of model
+# Diagnostic plots support suitability of model
 subMod_gauss_objOnly_viv |>
    plot(type = c("p", "smooth"), col.line = 2)
 # scale-location
@@ -472,7 +472,7 @@ subMod_gauss_objOnly_viv |>
    residuals() |>
    qqPlot()
 
-# Model results
+# Model results - vividness signicantly higher in controls than aphantasics as predicted.
 summary(subMod_gauss_objOnly_viv)
 
 # Object memory accuracy model specification 
@@ -483,7 +483,7 @@ subMod_gauss_obj_pT <- lmer(
      rename(value = pT)
   ) 
 
-# Diagnostic plots to assess suitability of model
+# Diagnostic plots support suitability of model
 subMod_gauss_obj_pT |>
    plot(type = c("p", "smooth"), col.line = 2)
 # scale-location
@@ -504,7 +504,8 @@ subMod_gauss_obj_pT |>
    residuals() |>
    qqPlot()
 
-# model results
+# model results - no group difference in accuracy, but maybe aphantasics were using alternative
+# strategies (e.g., verbal/semantic encoding of colours rather than mental imagery)
 summary(subMod_gauss_obj_pT)
 
 # Object memory precision model specification 
@@ -515,7 +516,7 @@ subMod_gauss_obj_pK <- lmer(
     rename(value = K)
   ) 
 
-# Diagnostic plots to assess suitability of model
+# Diagnostic plots support suitability of model
 subMod_gauss_obj_pK |>
    plot(type = c("p", "smooth"), col.line = 2)
 # scale-location
@@ -536,7 +537,9 @@ subMod_gauss_obj_pK |>
    residuals() |>
    qqPlot()
 
-# model results
+# model results - no group difference in precision, which should be most sensitive measure
+# of colour mental imagery differences! However, first-person colour memory is generally more precise than 
+# third-person colour memory - interesting.
 summary(subMod_gauss_obj_pK)
 
 # Object memory raw error model specification 
@@ -547,7 +550,7 @@ subMod_gauss_objOnly_Err <- lmer(
      rename(value = ObjErr)
   ) 
 
-# Diagnostic plots to assess suitability of model
+# Diagnostic plots support suitability of model
 subMod_gauss_objOnly_Err |>
    plot(type = c("p", "smooth"), col.line = 2)
 # scale-location
@@ -568,7 +571,7 @@ subMod_gauss_objOnly_Err |>
    residuals() |>
    qqPlot()
 
-# model results
+# model results - no differences in model free measure of colour imagery.
 summary(subMod_gauss_objOnly_Err)
 
 # object memory response time model specification 
@@ -579,7 +582,7 @@ subMod_gauss_objOnly_RT <- lmer(
     rename(value = ObjRT)
   ) 
 
-# Diagnostic plots to assess suitability of model
+# Diagnostic plots support suitability of model
 subMod_gauss_objOnly_RT |>
    plot(type = c("p", "smooth"), col.line = 2)
 # scale-location
@@ -600,7 +603,7 @@ subMod_gauss_objOnly_RT |>
    residuals() |>
    qqPlot()
 
-# Model results
+# Model results - no differences in response time, indicating no group differences in strategy use.
 summary(subMod_gauss_objOnly_RT)
 
 ## Spatial Memory Measures
@@ -616,7 +619,7 @@ subMod_gauss_spat_viv <- lmer(
      rename(value = SpatViv)
   )
 
-# Diagnostic plots to assess suitability of model
+# Diagnostic plots support suitability of model
 subMod_gauss_spat_viv  |>
    plot(type = c("p", "smooth"), col.line = 2)
 # scale-location
@@ -637,7 +640,7 @@ subMod_gauss_spat_viv  |>
    residuals() |>
    qqPlot()
 
-# Model results
+# Model results - controls have significantly higher vividness again as expected!
 summary(subMod_gauss_spat_viv)
 
 # Estimated marginal means to explore interaction effects
@@ -657,7 +660,7 @@ subMod_gauss_spat_MS <- lmer(
     rename(value = SpatMS)
   )
 
-# Diagnostic plots to assess suitability of model
+# Diagnostic plots support suitability of model
 subMod_gauss_spat_MS |>
    plot(type = c("p", "smooth"), col.line = 2)
 # scale-location
@@ -678,7 +681,7 @@ subMod_gauss_spat_MS |>
    residuals() |>
    qqPlot()
 
-# Model results
+# Model results - no interesting group differences
 summary(subMod_gauss_spat_MS)
 
 # Estimated marginal means to explore interaction effects
@@ -698,7 +701,7 @@ subMod_gauss_spat_RT <- lmer(
     rename(value = SpatRT)
   )
 
-# Diagnostic plots to assess suitability of model
+# Diagnostic plots support suitability of model
 subMod_gauss_spat_RT |>
    plot(type = c("p", "smooth"), col.line = 2)
 # scale-location
@@ -717,7 +720,7 @@ subMod_gauss_spat_RT |>
    residuals() |>
    qqPlot()
 
-# Model results
+# Model results - no interesting group differences
 summary(subMod_gauss_spat_RT)
 
 # Estimated marginal means to explore interaction effects
