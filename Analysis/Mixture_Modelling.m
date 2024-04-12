@@ -16,7 +16,7 @@ data.RespInRadians = wrap(data.Var16 / 180 * pi);
 sids = unique(data.Var17);
 modelData = cell(length(sids), 5);
 
-% Modelling to separate all-or-none accuracy from resposne precision
+% Modelling to separate all-or-none accuracy from response precision
 for i = 1:length(sids)
     sid = sids(i);
     modelData{i, 5} = sid;
