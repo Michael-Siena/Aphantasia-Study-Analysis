@@ -172,7 +172,7 @@ for sub = 1:nSubjects
         end
 
         disp('WROTE : all data');
-        disp(['SUBJECT : ' num2str(sub) ' | SESSION : ' num2str(sess) ' | TIIME ELAPSED (SECS) : ' num2str(toc)]);
+        disp(['SUBJECT : ' num2str(sub) ' | SESSION : ' num2str(sess) ' | TIME ELAPSED (SECS) : ' num2str(toc)]);
         disp('================================================================================================');
     end
 end
