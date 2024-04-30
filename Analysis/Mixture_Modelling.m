@@ -6,7 +6,6 @@ cd(fileparts(dirActive.Filename)); % assign active dir to cd
 addpath(genpath('./Functions/')); % adds path for Functions directory
 addpath(genpath('./Data/')); % adds path for Classes directory
 
-% read SAM weights
 trialwiseData = readtable('TrialwiseData_ObjResps.csv');
 data = trialwiseData(trialwiseData.Var13 == 0, :);
 
